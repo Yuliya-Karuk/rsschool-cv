@@ -36,3 +36,15 @@ function fakeBin(x){
   return result
 }
 ```
+
+## __Education__
+- __University:__ Belarusian State University, Chemistry faculty, 2011-2016
+- __Courses:__
+  - "IT Project Management" from IT Academy (completed)
+  ![Photo of the certificate of successful completion of the course](/images/IT_Academy_Karuk.jpg)
+  - RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+
+  ## __Languages__
+  - Russian (native)
+  - Belarussian (native)
+  - English (B1)
