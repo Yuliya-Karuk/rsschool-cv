@@ -38,7 +38,8 @@ body {
     margin-top: 40px;
 }
 
-.nav-list {
+.nav-list,
+.contact-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -59,4 +60,10 @@ body {
     margin-bottom: 40px;
 
     font-size: 16px;
+}
+
+/* MAIN */
+
+.contact-list a {
+    text-decoration: none;
 }
