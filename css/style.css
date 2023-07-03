@@ -41,7 +41,9 @@ body {
 .nav-list,
 .contact-list,
 .skill-list,
-.lang-list {
+.lang-list,
+.education-list,
+.course-list {
     list-style: none;
     margin: 0;
     padding: 0;
