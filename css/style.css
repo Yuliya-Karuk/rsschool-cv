@@ -50,7 +50,8 @@ body {
 .skill-list,
 .lang-list,
 .education-list,
-.course-list {
+.course-list,
+.projects-list {
     margin: 0;
     padding: 0;
 
@@ -212,4 +213,179 @@ body {
     background: url("../images/icon_checked.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+/*MAIN RIGHT COLUMN*/
+
+.right-column {
+    width: 55%;
+    padding: 20px 25px 0px 35px;
+
+    color: var(--basic-dark);
+}
+
+.right-column .general {
+    border-bottom: 1px solid var(--basic-dark-green);
+}
+
+.right-column .section-title {
+    color: var(--basic-dark-green);
+}
+
+/* EDUCATION */
+
+.education-title {
+    margin-left: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.education-text {
+    margin-left: 10px;
+
+    font-size: 16px;
+}
+
+.img-certificate {
+    margin-left: 30px;
+}
+
+.img-certificate:hover img,
+.img-certificate:focus img {
+    box-shadow: 0 0 10px 5px var(--basic-shadow);
+}
+
+/*CODE EXAMPLE */
+
+.code-name {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.code-text {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.code-ex {
+    margin: 0 -25px 0 -35px;
+    padding: 20px 0;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    background-color: rgba(175, 184, 193, 0.2);
+}
+
+/* PROJECTS */
+
+.projects {
+    width: 100%;
+    margin: 0;
+    padding: 20px 60px;
+
+    background-color: var(--basic-white-green);
+}
+
+.projects .section-title {
+    text-align: center;
+    color: var(--basic-dark-green);
+}
+
+.projects-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: calc((100% - 100px)/3);
+}
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-decoration: none;
+}
+
+.project-img {
+    width: calc((100% - 40px));
+    height: auto;
+    margin: 0 auto;
+}
+
+.project-description {
+    padding: 15px 0 25px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.project-title {
+    margin: 0;
+
+    color: var(--basic-dark);
+}
+
+.project-link:hover .project-img,
+.project-link:focus .project-img {
+    box-shadow: 0 0 10px 5px var(--basic-shadow);
+}
+
+.project-title:hover {
+    color: var(--basic-white);
+}
+
+.project-title:hover + .tech-wrapper .icon-js path {
+    stroke: var(--basic-white);
+}
+
+.project-title:hover+.tech-wrapper .icon-html path,
+.project-title:hover+.tech-wrapper .icon-css path {
+    fill: var(--basic-white);
+}
+
+/* FOOTER */
+
+.footer {
+    padding: 20px 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 700;
+    color: var(--basic-black);
+
+    background-color: var(--basic-dark-green);
+}
+
+.github-link {
+    display: flex;
+
+    text-decoration: none;
+    color: var(--basic-black);
+}
+
+.github-link:hover {
+    color: var(--basic-white);
+}
+
+.github-link path {
+    fill: var(--basic-black);
+}
+
+.github-text {
+    margin: auto 10px;
+}
+
+.footer-copyright {
+    margin: auto 0;
+}
+
+.rs-link:hover svg path,
+.github-link:hover path {
+    fill: var(--basic-white);
 }
