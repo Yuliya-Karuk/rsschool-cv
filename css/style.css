@@ -1,5 +1,11 @@
 :root {
     --basic-white: #f5f4f4;
+    --basic-dark-green: #1a3c40;
+    --basic-light-green: #1d5c63;
+    --basic-white-green: #B8D2D5;
+    --basic-black: #000000;
+    --basic-dark: #2c3333;
+    --basic-shadow: rgba(0, 0, 0, 0.2);
 }
 
 *,
@@ -25,17 +31,18 @@ html {
 
 body {
     min-width: 1200px;
-    margin: 0;
+    margin: 20px 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
+
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
     font-weight: 400;
 }
 
-.container {
+.page {
     width: 1040px;
     margin: 0 auto;
-    margin-top: 40px;
+    box-shadow: 0 0 20px 15px var(--basic-shadow);
 }
 
 .nav-list,
@@ -44,30 +51,165 @@ body {
 .lang-list,
 .education-list,
 .course-list {
-    list-style: none;
     margin: 0;
     padding: 0;
+
+    list-style: none;
+}
+
+.general {
+    margin-top: 40px;
 }
 
 /* HEADER */
+
+.header {
+    position: relative;
+
+    color: var(--basic-white);
+
+    background-color: var(--basic-dark-green);
+}
+
+.nav-list {
+    padding: 20px 20px 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    padding: 10px 10px;
+
+    font-weight: 700;
+    text-decoration: none;
+    color: inherit;
+
+    border-radius: 25px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: var(--basic-white-green);
+    color: var(--basic-black);
+}
+
+.header-wrapper {
+    padding-left: 700px;
+
+    display: flex;
+    flex-direction: column;
+}
+
 .header-title {
     margin: 0;
     margin-top: 80px;
-    font-weight: 500;
-    font-size: 32px;
 
+    font-size: 32px;
+    font-weight: 500;
 }
 
 .header-text {
-    margin: 0;
-    margin-top: 8px;
-    margin-bottom: 40px;
+    margin: 8px 0 40px;
 
     font-size: 16px;
 }
 
+.header-photo {
+    position: absolute;
+    left: 80px;
+    top: 80px;
+
+    border: 5px solid var(--basic-white);
+    border-radius: 50%;
+}
+
 /* MAIN */
 
-.contact-list a {
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+/* LEFT COLUMN */
+
+.left-column {
+    width: 45%;
+    padding: 135px 100px 0px 80px;
+
+    color: var(--basic-white);
+
+    background-color: var(--basic-light-green);
+}
+
+.left-column .section-title {
+    margin: 0;
+    margin-bottom: 22px;
+    padding-bottom: 8px;
+
+    border-bottom: 2px solid var(--basic-white);
+}
+
+/* CONTACT */
+
+.contact-item {
+    margin: 10px 0px 10px 10px;
+}
+
+.contact-link {
+    color: var(--basic-white);
     text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--basic-dark-green);
+}
+
+.contact-svg path {
+    fill: var(--basic-white);
+}
+
+.contact-text {
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+/* SKILLS */
+
+.skill-list {
+    list-style: circle;
+}
+
+.skill-item {
+    margin: 10px 0px 10px 30px;
+}
+
+/* LANGUAGES */
+
+.lang-item {
+    position: relative;
+
+    margin: 10px 0px 10px 40px;
+    vertical-align: middle;
+}
+
+.lang-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+
+    width: 24px;
+    height: 20px;
+
+    background-color: var(--basic-white);
+    background: url("../images/icon_checked.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
