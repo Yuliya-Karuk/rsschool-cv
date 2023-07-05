@@ -37,6 +37,7 @@ body {
 .page {
     max-width: 1200px;
     margin: 0 auto;
+
     box-shadow: 0 0 10px 1px var(--basic-black);
 }
 
@@ -89,11 +90,11 @@ body {
     color: var(--basic-black);
 
     background-color: var(--basic-white-green);
-    box-shadow: 0px 1px 3px var(--basic-black);
+    box-shadow: 0 1px 3px var(--basic-black);
 }
 
 .nav-link:active {
-    box-shadow: inset 0px 2px 2px var(--basic-black);
+    box-shadow: inset 0 2px 2px var(--basic-black);
 }
 
 .header-wrapper {
@@ -153,7 +154,7 @@ body {
 
 .left-column {
     width: 45%;
-    padding: 135px 100px 0px 80px;
+    padding: 135px 100px 0 80px;
 
     color: var(--basic-white);
 
@@ -169,7 +170,7 @@ body {
 /* CONTACT */
 
 .contact-item {
-    margin: 10px 0px 10px 10px;
+    margin: 10px 0 10px 10px;
 }
 
 .contact-link {
@@ -205,7 +206,7 @@ body {
 }
 
 .skill-item {
-    margin: 10px 0px 10px 30px;
+    margin: 10px 0 10px 30px;
 }
 
 /* LANGUAGES */
@@ -213,7 +214,7 @@ body {
 .lang-item {
     position: relative;
 
-    margin: 10px 0px 10px 40px;
+    margin: 10px 0 10px 40px;
     vertical-align: middle;
 }
 
@@ -236,7 +237,7 @@ body {
 
 .right-column {
     width: 55%;
-    padding: 20px 40px 0px;
+    padding: 20px 40px 0;
 
     color: var(--basic-dark);
 }
@@ -285,6 +286,9 @@ body {
 }
 
 .img-certificate img {
+    width: 228px;
+    height: auto;
+
     transition-duration: 0.3s;
 }
 
@@ -321,7 +325,6 @@ body {
     font-family: inherit;
     font-size: 14px;
 }
-
 
 /* PROJECTS */
 
@@ -491,7 +494,7 @@ body {
     }
 
     .left-column {
-        padding: 80px 20px 0px;
+        padding: 80px 20px 0;
     }
 
     .section-title {
@@ -499,7 +502,7 @@ body {
     }
 
     .right-column {
-        padding: 20px 30px 0px;
+        padding: 20px 30px 0;
     }
 
     .education-title {
@@ -508,6 +511,7 @@ body {
 
     .code-ex {
         margin: 0 -30px;
+        padding-left: 10px;
     }
 
     .projects {
@@ -552,7 +556,7 @@ body {
     }
 
     .left-column {
-        padding: 80px 10px 0px 10px;
+        padding: 80px 10px 0 10px;
     }
 
     .contact-text {
@@ -560,7 +564,7 @@ body {
     }
 
     .right-column {
-        padding: 15px 15px 0px;
+        padding: 15px 15px 0;
     }
 
     .img-certificate {
@@ -569,7 +573,6 @@ body {
 
     .img-certificate img {
         width: 200px;
-        height: auto;
     }
 
     .code-text {
@@ -605,7 +608,7 @@ body {
         padding: 10px 20px;
     }
 
-    .github-link svg,
+    .github-link,
     .rs-link {
         transform: scale(0.8);
     }
@@ -614,7 +617,7 @@ body {
 @media screen and (max-width: 480px) {
 
     .nav-list {
-        padding: 10px 10px;
+        padding: 10px;
     }
 
     .nav-item {
@@ -644,7 +647,7 @@ body {
 
     .left-column {
         width: 100%;
-        padding: 20px 30px 0px;
+        padding: 20px 30px 0;
     }
 
     .section-title {
@@ -664,7 +667,7 @@ body {
     }
 
     .skill-item {
-        margin: 5px 0px 5px 30px;
+        margin: 5px 0 5px 30px;
     }
 
     .lang-item::before {
@@ -672,7 +675,7 @@ body {
     }
 
     .lang-item {
-        margin: 5px 0px 5px 40px;
+        margin: 5px 0 5px 40px;
     }
 
     .lang {
@@ -715,7 +718,7 @@ body {
         padding: 5px 10px;
     }
 
-    .github-link svg,
+    .github-link,
     .rs-link {
         transform: scale(0.6);
     }
